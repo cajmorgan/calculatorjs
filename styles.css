@@ -28,7 +28,7 @@ body {
 button {
   border: none;
   border-radius: 30px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   outline: none;
   color: white;
@@ -87,6 +87,7 @@ button {
   grid-column-start: 4;
   grid-column-end: 4;
   background-color: #f1a33c;
+  font-size: 30px;
 }
 
 .divide:active {
@@ -131,6 +132,7 @@ button {
   grid-column-start: 4;
   grid-column-end: 4;
   background-color: #f1a33c;
+  font-size: 30px;
 }
 
 .multiply:active {
@@ -173,6 +175,7 @@ button {
   grid-column-start: 4;
   grid-column-end: 4;
   background-color: #f1a33c;
+  font-size: 30px;
 }
 .minus:active {
   background-color: #f3c995;
@@ -218,6 +221,7 @@ button {
   grid-column-start: 4;
   grid-column-end: 4;
   background-color: #f1a33c;
+  font-size: 30px;
 }
 .plus:active {
   background-color: #f3c995;
@@ -251,6 +255,7 @@ button {
   grid-column-start: 4;
   grid-column-end: 4;
   background-color: #f1a33c;
+  font-size: 30px;
 }
 
 .equal:active {
