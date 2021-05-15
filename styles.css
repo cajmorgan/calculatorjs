@@ -40,7 +40,7 @@ button {
   grid-row-end: 1;
   grid-column-start: 1;
   grid-column-end: 5;
-  /* text-align: right; */
+  text-align: right;
   margin: 7px;
   font-size: 40px;
 }
@@ -132,7 +132,7 @@ button {
   grid-column-start: 4;
   grid-column-end: 4;
   background-color: #f1a33c;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 
 .multiply:active {
