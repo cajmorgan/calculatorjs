@@ -7,6 +7,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  overflow: hidden;
 }
 
 .calculator {
@@ -15,8 +17,22 @@ body {
   grid-template-rows: 54px 54px 54px 54px 54px 54px;
   justify-content: center;
   align-content: center;
-  padding: 384px 216px;
-  background-color: rgb(99, 94, 94);
+  padding: 100px 50px;
+  background-color: black;
+  grid-gap: 7px;
+  font-family: Helvetica;
+  color: white;
+  transform: scale(1.5);
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  color: white;
+  transition-duration: 0.3s;
 }
 
 .display {
@@ -25,8 +41,8 @@ body {
   grid-column-start: 1;
   grid-column-end: 5;
   text-align: right;
-  margin: 5px;
-  font-size: 30px;
+  margin: 7px;
+  font-size: 40px;
 }
 
 .reset {
@@ -34,6 +50,11 @@ body {
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 1;
+  color: black;
+  background-color: #a5a5a5;
+}
+.reset:active {
+  background-color: #d9d9d9;
 }
 
 .swap {
@@ -41,13 +62,23 @@ body {
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 2;
+  color: black;
+  background-color: #a5a5a5;
+}
+.swap:active {
+  background-color: #d9d9d9;
 }
 
-.percentage {
+.square {
   grid-row-start: 2;
   grid-row-end: 2;
   grid-column-start: 3;
   grid-column-end: 3;
+  color: black;
+  background-color: #a5a5a5;
+}
+.square:active {
+  background-color: #d9d9d9;
 }
 
 .divide {
@@ -55,6 +86,12 @@ body {
   grid-row-end: 2;
   grid-column-start: 4;
   grid-column-end: 4;
+  background-color: #f1a33c;
+  font-size: 30px;
+}
+
+.divide:active {
+  background-color: #f3c995;
 }
 
 .seven {
@@ -62,13 +99,20 @@ body {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 1;
+  background-color: #333333;
 }
-
+.seven:active {
+  background-color: #737373;
+}
 .eight {
   grid-row-start: 3;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 2;
+  background-color: #333333;
+}
+.eight:active {
+  background-color: #737373;
 }
 
 .nine {
@@ -76,6 +120,10 @@ body {
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 3;
+  background-color: #333333;
+}
+.nine:active {
+  background-color: #737373;
 }
 
 .multiply {
@@ -83,6 +131,12 @@ body {
   grid-row-end: 3;
   grid-column-start: 4;
   grid-column-end: 4;
+  background-color: #f1a33c;
+  font-size: 30px;
+}
+
+.multiply:active {
+  background-color: #f3c995;
 }
 
 .four {
@@ -90,27 +144,41 @@ body {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 1;
+  background-color: #333333;
 }
-
+.four:active {
+  background-color: #737373;
+}
 .five {
   grid-row-start: 4;
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 2;
+  background-color: #333333;
 }
-
+.five:active {
+  background-color: #737373;
+}
 .six {
   grid-row-start: 4;
   grid-row-end: 4;
   grid-column-start: 3;
   grid-column-end: 3;
+  background-color: #333333;
 }
-
+.six:active {
+  background-color: #737373;
+}
 .minus {
   grid-row-start: 4;
   grid-row-end: 4;
   grid-column-start: 4;
   grid-column-end: 4;
+  background-color: #f1a33c;
+  font-size: 30px;
+}
+.minus:active {
+  background-color: #f3c995;
 }
 
 .one {
@@ -118,6 +186,11 @@ body {
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 1;
+  background-color: #333333;
+}
+
+.one:active {
+  background-color: #737373;
 }
 
 .two {
@@ -125,6 +198,10 @@ body {
   grid-row-end: 5;
   grid-column-start: 2;
   grid-column-end: 2;
+  background-color: #333333;
+}
+.two:active {
+  background-color: #737373;
 }
 
 .three {
@@ -132,6 +209,10 @@ body {
   grid-row-end: 5;
   grid-column-start: 3;
   grid-column-end: 3;
+  background-color: #333333;
+}
+.three:active {
+  background-color: #737373;
 }
 
 .plus {
@@ -139,6 +220,11 @@ body {
   grid-row-end: 5;
   grid-column-start: 4;
   grid-column-end: 4;
+  background-color: #f1a33c;
+  font-size: 30px;
+}
+.plus:active {
+  background-color: #f3c995;
 }
 
 .zero {
@@ -146,12 +232,21 @@ body {
   grid-row-end: 6;
   grid-column-start: 1;
   grid-column-end: 3;
+  background-color: #333333;
+}
+
+.zero:active {
+  background-color: #737373;
 }
 .comma {
   grid-row-start: 6;
   grid-row-end: 6;
   grid-column-start: 3;
   grid-column-end: 3;
+  background-color: #333333;
+}
+.comma:active {
+  background-color: #737373;
 }
 
 .equal {
@@ -159,4 +254,10 @@ body {
   grid-row-end: 6;
   grid-column-start: 4;
   grid-column-end: 4;
+  background-color: #f1a33c;
+  font-size: 30px;
+}
+
+.equal:active {
+  background-color: #f3c995;
 }
