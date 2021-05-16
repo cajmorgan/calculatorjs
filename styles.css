@@ -22,7 +22,24 @@ body {
   grid-gap: 7px;
   font-family: Helvetica;
   color: white;
-  transform: scale(1.5);
+  transform: scale(1.7);
+  transition-duration: 1s;
+}
+
+@media only screen and (max-width: 700px) {
+  .calculator {
+    transform: scale(2.5);
+  }
+  button {
+    font-size: 20px;
+  }
+  .multiply,
+  .divide,
+  .minus,
+  .plus,
+  .equal {
+    font-size: 20px;
+  }
 }
 
 button {

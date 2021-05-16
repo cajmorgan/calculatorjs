@@ -496,6 +496,6 @@ function clear() {
 calculator.addEventListener('click', operate);
 
 
-window.addEventListener('keydown', operateKey)
+// window.addEventListener('keydown', operateKey)
 
 
